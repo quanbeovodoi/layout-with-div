@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+        body{
+            padding-left: 1px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            width: 100%;
+            font-size: 20px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            margin-top: 5px;
+        }
+        table{
+            border-spacing: 0px;
+        }
+        table td{
+            /* border: 1px solid #333; */
+            vertical-align: top;
+        }
+        p,img{
+            margin: 0;
+            padding: 0;
+        }
+        .smallImg{
+            float: left;
+            width: 50%;
+            padding: 8px;
+        } 
+        .left{
+            float: left;
+            width: 26%;
+            border-right: 1px solid #333;
+            padding-right: 10px;
+        }
+        .right{
+            width: 26%;
+            float: left;
+            border-left: 1px solid #333;
+            padding-left: 10px;
+        }
+        .leftTop{
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .rightTop{
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .main{
+            float: left;
+            width: 48%;
+            /* padding-left: 10px;
+            padding-right: 10px; */
+            padding: 0px 10px 0px 10px;
+        }
+        .clear{
+            clear: both;
+        }
+        .viewmore{
+            float: right;
+            outline: none;
+            background-color: #e67f23;
+            border: 1px solid #d67219;
+            padding: 8px;
+            border-radius: 5px;
+            color: #fff;
+            width: 110px;
+            margin: 0px 8px 0px 0px;
+            cursor: pointer;
+        }
+        .readmore{
+            float: left;
+            outline: none;
+            background-color: #354a5f;
+            border: 1px solid #354a5f;
+            padding: 8px;
+            border-radius: 5px;
+            color: #fff;
+            width: 110px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .article{
+            border-top: 1px solid #333;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .sectionHeading{
+            width: 100%;
+        }
+        .sectionHeading p{
+            padding: 10px 25px 0px 10px;
+        }
+        h2{
+            margin-top: 0;
+        }
+        .box h3{
+            margin-right: 0;
+            margin-left: 1px;
+        }
+        .box
+        {
+            width: 33.3%;
+            float: left;
+            padding: 0px 0px 40px 0px;
+        }
+        .box img{
+            width: 514px;
+        }
+        .box.middle{
+            padding: 0 20px 0 20px;
+        }
+        .article img{
+            width: 41%;
+        }
+        .mainImage{
+            width: 100%;
+        }
+        .footer{
+            background: #333;
+            color: #fff;
+        }
+        .green{
+            color: lawngreen;
+        }
+        .blue{
+            color:rgb(17, 96, 170);
+        }
+        .numlist{
+            border-radius: 5px;
+            padding: 2px 7px;
+            background: rgb(0, 0, 0);
+            color: #fff;
+        }
+        .dot{
+            height: 10px;
+            width: 10px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 1.5px;
+        }
+        .cols{
+            float: left;
+            padding: 30px 20px;
+            width: 25%;
+        }
+        .cols p{
+            margin:0
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <div class="leftTop">
+            <h2>Left Sidebar</h2>
+            <ul>
+                <li><span class="dot"></span> Unordered list item #1</li>
+                <li><span class="dot"></span> Unordered list item #2</li>
+                <li><span class="dot"></span> Unordered list item #3</li>
+                <li><span class="dot"></span> Unordered list item #4</li>
+            </ul>
+            <ul>
+                <li><span class="numlist">1</span> Ordered list item #1</li>
+                <li><span class="numlist">2</span> Ordered list item #2</li>
+                <li><span class="numlist">3</span> Ordered list item #3</li>
+            </ul>
+        </div>
+        <div class="leftBottom">
+            <h3>Left Sidebar Image Gallery</h3>
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <button class="viewmore"><b></b>View more</b></button>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="mainImage">
+            <img src="images/mainImg.png" alt="" width="100%">
+        </div>
+        <div class="article">
+            <img src="images/250x130.PNG" alt="" style="float: left; padding-right: 10px;">
+            <h2>Feature Article</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit.</p>
+            <button class="readmore">Read more</button>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="rightTop">
+            <h2>Right Sidebar</h2>
+            <ul>
+                <li><span class="dot"></span> Unordered list item #1</li>
+                <li><span class="dot"></span> Unordered list item #2</li>
+                <li><span class="dot"></span> Unordered list item #3</li>
+                <li><span class="dot"></span> Unordered list item #4</li>
+            </ul>
+            <ul>
+                <li><span class="numlist">1</span> Ordered list item #1</li>
+                <li><span class="numlist">2</span> Ordered list item #2</li>
+                <li><span class="numlist">3</span> Ordered list item #3</li>
+            </ul>
+        </div>
+        <div class="rightBottom">
+            <h3>Right Sidebar Image Gallery</h3>
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <img class="smallImg" src="images/120x85.PNG" alt="">
+            <div class="clear"></div>
+            <button class="viewmore">View more</button>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="section-content">
+        <div class="sectionHeading">
+            <div class="box">
+                <h3>Section Heading 3</h3>
+                <img src="images/380x200.PNG" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+                </p>
+            </div>
+            <div class="box">
+                <h3>Section Heading 3</h3>
+                <img src="images/380x200.PNG" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+                </p>
+            </div>
+            <div class="box">
+                <h3>Section Heading 3</h3>
+                <img src="images/380x200.PNG" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="cols">
+            <h4 class="green">Examples Layouts</h4>
+            <p>Web Page</p>
+            <p>Image Gallery</p>
+            <p>Ecommerce Page</p>
+            <p>Contact Page</p>
+        </div>
+        <div class="cols">
+            <h4 class="blue">Documentation</h4>
+            <p>Grid</p>
+            <p>Helpers</p>
+            <p>Typography</p>
+            <p>Navigation</p>
+            <p>Buttons</p>
+        </div>
+        <div class="cols" style="margin-top:77.2px">
+            <p>Boxes</p>
+            <p>Message Boxes</p>
+            <p>Tables</p>
+            <p>Tabs</p>
+            <p>Form Elements</p>
+        </div>
+        <div class="cols" style="margin-top:77.2px">
+            <p>Icons</p>
+            <p>Responsive Text</p>
+            <p>Tabs</p>
+            <p>Animations</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- <table>
+        <tr>
+            <td class="left">
+                <div class="leftTop">
+                    <h2>Left Sidebar</h2>
+                    <ul>
+                        <li><span class="dot"></span> Unordered list item #1</li>
+                        <li><span class="dot"></span> Unordered list item #2</li>
+                        <li><span class="dot"></span> Unordered list item #3</li>
+                        <li><span class="dot"></span> Unordered list item #4</li>
+                    </ul>
+                    <ul>
+                        <li><span class="numlist">1</span> Ordered list item #1</li>
+                        <li><span class="numlist">2</span> Ordered list item #2</li>
+                        <li><span class="numlist">3</span> Ordered list item #3</li>
+                    </ul>
+                </div>
+                
+                <div class="leftBottom">
+                    <h3>Left Sidebar Image Gallery</h3>
+                    <table>
+                        <tr>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                        </tr>
+                    </table>
+                    <button class="viewmore"><b></b>View more</b></button>
+                    <div class="clear"></div>
+                </div>
+            </td>
+            <td class="main">
+                <div class="mainImage">
+                    <img src="images/mainImg.png" alt="" width="100%">
+                </div>
+                <div class="article">
+                    <img src="images/250x130.PNG" alt="" style="float: left; padding-right: 10px;">
+                    <h2>Feature Article</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit.</p>
+                    <button class="readmore">Read more</button>
+                    <div class="clear"></div>
+                </div>
+            </td>
+            <td class="right">
+                <div class="rightTop">
+                    <h2>Right Sidebar</h2>
+                    <ul>
+                        <li><span class="dot"></span> Unordered list item #1</li>
+                        <li><span class="dot"></span> Unordered list item #2</li>
+                        <li><span class="dot"></span> Unordered list item #3</li>
+                        <li><span class="dot"></span> Unordered list item #4</li>
+                    </ul>
+                    <ul>
+                        <li><span class="numlist">1</span> Ordered list item #1</li>
+                        <li><span class="numlist">2</span> Ordered list item #2</li>
+                        <li><span class="numlist">3</span> Ordered list item #3</li>
+                    </ul>
+                </div>
+                <div class="rightBottom">
+                    <h3>Right Sidebar Image Gallery</h3>
+                    <table>
+                        <tr>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                            <td><img class="smallImg" src="images/120x85.PNG" alt=""></td>
+                        </tr>
+                    </table>
+                    <button class="viewmore">View more</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <table class="sectionHeading">
+                    <tr>
+                        <td class="box">
+                            <h3>Section Heading 3</h3>
+                            <img src="images/380x200.PNG" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+                            </p>
+                        </td>
+                        <td class="box middle">
+                            <h3>Section Heading 3</h3>
+                            <img src="images/380x200.PNG" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+                            </p>
+                        </td>
+                        <td class="box">
+                            <h3>Section Heading 3</h3>
+                            <img src="images/380x200.PNG" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="footer">
+            <td colspan="3">
+                <table>
+                    <tr>
+                        <td><h4 class="green">Examples Layouts</h4></td>
+                        <td><h4 class="blue">Documentation</h4></td>
+                    </tr>
+                    <tr>
+                        <td>Web Page</td>
+                        <td>Grid</td>
+                        <td>Boxes</td>
+                        <td>Icons</td>
+                    </tr>
+                    <tr>
+                        <td>Image Gallery</td>
+                        <td>Helpers</td>
+                        <td>Message Boxes</td>
+                        <td>Responsive Text</td>
+                    </tr>
+                    <tr>
+                        <td>Ecommerce Page</td>
+                        <td>Typography</td>
+                        <td>Tables</td>
+                        <td>Tabs</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Page</td>
+                        <td>Navigation</td>
+                        <td>Tabs</td>
+                        <td>Animations</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Buttons</td>
+                        <td>Form Elements</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table> -->
+</body>
+</html>
